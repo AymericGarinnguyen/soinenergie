@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^partages$  /partage.php [L]
+RewriteRule ^don$  /don.php [L]
+
+Options -Indexes

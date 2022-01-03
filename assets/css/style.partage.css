@@ -1,0 +1,154 @@
+/* CSS pour la video */
+
+.hide {
+    display: none;
+}
+
+#lightbox {
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#lightbox .video {
+    width: 80%;
+    padding-top: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+#lightbox .video iframe {
+    margin: auto;
+    width: 100%;
+}
+
+/* CSS pour la page partage */
+
+.partage {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.categorie-partage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.element-partage {
+    background: #f1f1f1;
+    position: relative;
+    width: 80%;
+    padding: 40px 40px 15px;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.element-partage figure {
+    text-align: center;
+}
+
+.element-partage figure img {
+    max-width: 180px;
+}
+
+.element-partage h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.element-partage h3 {
+    color: #7699b6;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.element-partage .duree {
+    color: #7699b6;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.element-partage .description_partage {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 15px;
+    margin: 10px 0 0;
+}
+
+.web {
+    display: block;
+    margin-top: 25px;
+}
+
+.element-partage a {
+    color: #7699b6;
+    font-size: .9rem;
+}
+
+.element-partage .lire {
+    border: none;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+.element-partage .lire i {
+    color: #FF0000;
+}
+
+@media screen and (max-width: 767px) {
+    .element-partage {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-height: 823px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #lightbox .video {
+        width: 100%;
+        padding: 18% 0;
+        margin: 0;
+    }
+}
+
+/* Landscape phones */
+
+@media only screen and (max-width: 414px) and (max-height: 823px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #lightbox .video {
+        width: 100%;
+        height: 99%;
+        padding: 20px;
+    }
+    #lightbox .video iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .element-partage {
+        margin-top: 10px;
+    }
+    .element-partage figure {
+        margin-top: -90px;
+    }
+    .element-partage figure img {
+        width: 100px;
+    }
+    .element-partage figcaption {
+        font-size: 1.1rem;
+    }
+    .element-partage h2 {
+        font-size: 1rem;
+    }
+    .element-partage h3 {
+        font-size: .9rem;
+    }
+    .element-partage p {
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,145 @@
+header {
+    position: relative;
+    font-family: Helvetica, sans-serif;
+}
+
+.bandeau {
+    position: relative;
+    margin: 0;
+    background-color: #627989;
+    text-align: center;
+    padding: 15px 0 10px;
+}
+
+.bandeau img {
+    width: 215px;
+}
+
+.bandeau #droits {
+    position: absolute;
+    color:#e1d5c9;
+    right: -30px;
+    bottom: 35px;
+    transform: rotate(-90deg);
+    font-size: .6rem;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #e7e4e0;
+    padding: 3px 0;
+    z-index: 1000;
+}
+
+.navbar-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    width: 33%;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0;
+    color: #686362;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d6744a;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #d6744a;
+}
+
+.nav-modal {
+    cursor: pointer;
+}
+
+.modal {
+    z-index: 9999;
+}
+
+.robot {
+    margin-left: 17px;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .bandeau img {
+        width: 160px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .bandeau #droits {
+        right: -25px;
+        font-size: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 634px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    
+    .bandeau img {
+        width: 120px;
+    }
+}
+
+/* Portrait phones */
+
+@media only screen and (max-width: 450px) and (max-height: 823px) and (min-height: 320px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .bandeau {
+        padding: 10px 0;
+    }
+    
+    .bandeau img {
+        width: 90px;
+    }
+    
+    .bandeau #droits {
+        right: -20px;
+        bottom: 20px;
+        font-size: .3rem;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0;
+        flex-direction: row!important;
+    }
+
+    .nav-item {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .bandeau img {
+        width: 80px;
+    }
+
+    .nav-item {
+        font-size: .6rem;
+    }
+}

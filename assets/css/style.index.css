@@ -1,0 +1,119 @@
+/* Section accueil */
+
+.accueil {
+    margin-top: 40px;
+}
+
+.main-accueil {
+    position: relative;
+    margin: 0;
+}
+
+hr {
+    background-color: grey;
+    width: 100px;
+    border: none;
+    height: 1px;
+    color: grey;
+    margin: .5rem auto;
+}
+
+/* cadre accueil */
+
+.cadre-accueil {
+    width: 100%;
+}
+
+.cadre-accueil h1 {
+    color: #627989;
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: .83em;
+}
+
+.presentation {
+    padding: 0 40px 20px;
+}
+
+/* Cadres articles */
+
+.articles {
+    background: rgba(211, 206, 198, .6);
+    position: relative;
+    width: 100%;
+    padding: 40px 40px 20px;
+    margin: 135px auto 70px;
+}
+
+.articles figure {
+    text-align: center;
+}
+
+.articles figure img {
+    max-width: 180px;
+}
+
+.acc-corps ul {
+    list-style-type: circle!important;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .articles img {
+        max-height: 219px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .accueil {
+        margin-top: 40px;
+    }
+    .articles figure {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .articles img {
+        max-width: 219px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .articles {
+        width: 100%;
+    }
+}
+
+/* Phones portrait */
+
+@media only screen and (max-width: 414px) and (max-height: 823px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .accueil {
+        margin-top: 30px;
+    }
+    .presentation {
+        padding: 0 20px 20px;
+    }
+    .articles {
+        padding: 20px;
+        margin: 80px auto 70px;
+    }
+    .articles figure {
+        margin-top: -70px;
+        margin-bottom: 20px;
+    }
+    .articles figure img {
+        width: 100px;
+    }
+}
+
+/* Portrait Ipad */
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .articles figure {
+        padding-top: 30px;
+    }
+    .articles img {
+        max-width: 100%;
+    }
+}

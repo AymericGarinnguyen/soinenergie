@@ -1,0 +1,94 @@
+.accueil img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+/*Kothing-editor */
+.kothing-editor .ke-menu-list {
+    overflow: hidden;
+}
+
+/* ************************************
+************ ADMIN PODCASTS ***********
+************************************ */
+
+.container-fluid {
+    margin-top: 30px;
+}
+
+.liste-podcast,.liste-partage, .liste-accompagnement {
+    width: 49%;
+    padding: 10px;
+    border-right: 1px solid grey;
+}
+
+.creation-podcast, .creation-partage, .creation-accompagnement {
+    width: 49%;
+    padding: 10px;
+}
+
+.pod-article, .partage-article, .accompagnement-article {
+    padding: 20px;
+}
+
+.pod-article table, .partage-article table, .accompagnement-article table {
+    width: 100%;
+}
+
+.pod-article table thead, .partage-article table thead, .accompagnement-article table thead {
+    background: rgb(167, 166, 166);
+}
+
+.pod-article table tbody:before, .partage-article table tbody:before, .accompagnement-article table tbody:before {
+    content: "@";
+    display: block;
+    line-height: 10px;
+    text-indent: -99999px;
+}
+
+.pod-article table tbody tr:nth-child(2n+0), .partage-article table tbody tr:nth-child(2n+0), .accompagnement-article table tbody tr:nth-child(2n+0) {
+    background: lightgrey;
+}
+
+.pod-article figure, .partage-article figure, .accompagnement-article figure {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.pod-article img, .partage-article img, .accompagnement-article img  {
+    width: 50px;
+}
+
+.pod-article .modif i, .partage-article .modif i, .accompagnement-article .modif i {
+    color: rgb(32, 93, 226);
+}
+
+.pod-article .suppr i, .partage-article .suppr i, .accompagnement-article .suppr i {
+    color: red;
+}
+
+.update-margin {
+    padding: 20px;
+}
+
+.update-form figure {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.update-form figure img {
+    width: 50px;
+}
+
+.update-form a {
+    color: white;
+}
+
+.update-form a:hover{
+    color: white;
+    text-decoration: none;
+}

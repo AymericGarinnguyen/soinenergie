@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Bell MT';
+    src: url('BellMT.eot');
+    src: url('BellMT.eot?#iefix') format('embedded-opentype'),
+        url('BellMT.woff2') format('woff2'),
+        url('BellMT.woff') format('woff'),
+        url('BellMT.ttf') format('truetype'),
+        url('BellMT.svg#BellMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Bell MT';
+    src: url('../../font_bell_mt/BellMT.eot');
+    src: url('../../font_bell_mt/BellMT.eot?#iefix') format('embedded-opentype'), url('../../font_bell_mt/BellMT.woff2') format('woff2'), url('../../font_bell_mt/BellMT.woff') format('woff'), url('../../font_bell_mt/BellMT.ttf') format('truetype'), url('../../font_bell_mt/BellMT.svg#BellMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mistral';
+    src: url('../../font_mistral/Mistral.eot');
+    src: url('../../font_mistral/Mistral.eot?#iefix') format('embedded-opentype'), url('../../font_mistral/Mistral.woff2') format('woff2'), url('../../font_mistral/Mistral.woff') format('woff'), url('../../font_mistral/Mistral.ttf') format('truetype'), url('../../font_mistral/Mistral.svg#BellMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: url("../img/bg.png") no-repeat center fixed;
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    /* pour anciens Chrome et Safari */
+    background-size: cover;
+    /* version standardisée */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2, h3, h4, h5, h6, blockquote, ul, ol {
+    margin: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-block-start: .83em;
+    margin-block-end: .83em;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+h4 {
+    font-size: 1em;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+
+h5 {
+    font-size: .83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+}
+
+h6 {
+    font-size: .67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: inherit;
+}
+
+blockquote {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: #999;
+    padding: 0 5px 0 20px;
+    border: solid #b1b1b1;
+    border-width: 0 0 0 5px;
+}
+
+ul, ol {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+    margin-bottom: 5px;
+}
+
+.principale {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, .03), -3px 0 3px rgba(0, 0, 0, .03);
+    max-width: 980px;
+}
+
+.displayHide {
+    display: none!important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .principale {
+        max-width: 740px;
+    }
+}
+
+/* Portrait Ipad */
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .principale {
+        margin: 0;
+        max-width: 100%;
+    }
+}
